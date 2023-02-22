@@ -1,0 +1,220 @@
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: "Barlow", sans-serif;
+}
+
+@mixin button {
+  border-radius: 8px;
+  border: none;
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+header,
+main {
+  margin: 0 24px;
+}
+
+.header {
+  padding-top: 23px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__logo {
+    height: 40px;
+    width: 40px;
+  }
+
+  &__button {
+    @include button();
+    background: #e8eff2;
+    color: #162542;
+    padding: 11px 14.5px 11px 13.5px;
+  }
+}
+
+main {
+  .hero {
+    margin-top: 64px;
+
+    &__heading {
+      font-weight: 900;
+      font-size: 48px;
+      line-height: 48px;
+      text-transform: uppercase;
+      color: #162542;
+    }
+
+    &__para {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 26px;
+      color: #7b8bad;
+      margin-top: 32px;
+    }
+
+    &__button-and-date {
+      display: flex;
+      align-items: center;
+      margin-top: 32px;
+    }
+
+    &__button {
+      background: #f16718;
+      border-radius: 8px;
+      @include button();
+      color: #ffffff;
+      padding: 11px 14px;
+    }
+
+    &__date {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 26px;
+      text-transform: uppercase;
+      color: #7b8bad;
+      margin-left: 32px;
+    }
+
+    &__image {
+      margin-top: 64px;
+      width: 350px;
+      height: 331px;
+      border-radius: 16px;
+    }
+  }
+
+  .images {
+    display: flex;
+    margin-left: -46px;
+    margin-top: 24px;
+
+    .left-background {
+      background: #f16718;
+      width: 129px;
+      height: 193px;
+      margin-right: 24px;
+      border-radius: 16px;
+    }
+
+    .left {
+      width: 129px;
+      height: 193px;
+      margin-right: 24px;
+      mix-blend-mode: multiply;
+      opacity: 0.75;
+      border-radius: 16px;
+    }
+
+    .right {
+      width: 220px;
+      height: 193px;
+      border-radius: 16px;
+    }
+  }
+
+  .mechanical {
+    margin-top: 75px;
+
+    &__heading {
+      font-weight: 900;
+      font-size: 32px;
+      line-height: 36px;
+      text-align: center;
+      text-transform: uppercase;
+
+      color: #162542;
+    }
+
+    &__para {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 26px;
+      text-align: center;
+      color: #7b8bad;
+
+      margin-top: 24px;
+    }
+  }
+
+  .cards {
+    margin-top: 111px;
+    .card {
+      display: grid;
+      justify-items: center;
+      text-align: center;
+
+      &__image {
+        width: 60px;
+        height: 60px;
+        background: #f16718;
+        border-radius: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      &__heading {
+        margin-top: 48px;
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 28px;
+        text-transform: uppercase;
+        color: #162542;
+      }
+
+      &__para {
+        margin-top: 24px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 26px;
+
+        color: #7b8bad;
+      }
+    }
+
+    .card + .card {
+      margin-top: 64px;
+    }
+  }
+}
+
+.footer {
+  margin-top: 96px;
+  text-align: center;
+  padding-bottom: 55px;
+
+  &__text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: #7b8bad;
+
+    &--bold {
+      font-weight: 700;
+    }
+  }
+}
