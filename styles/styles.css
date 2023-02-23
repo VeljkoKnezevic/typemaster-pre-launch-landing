@@ -42,8 +42,8 @@ main {
   font-family: "Barlow";
   font-style: normal;
   font-weight: 700;
-  font-size: 16px;
-  line-height: 26px;
+  font-size: 1rem;
+  line-height: 1.625rem;
   text-transform: uppercase;
   background: #e8eff2;
   color: #162542;
@@ -55,15 +55,15 @@ main .hero {
 }
 main .hero__heading {
   font-weight: 900;
-  font-size: 48px;
-  line-height: 48px;
+  font-size: 3rem;
+  line-height: 3rem;
   text-transform: uppercase;
   color: #162542;
 }
 main .hero__para {
   font-weight: 500;
-  font-size: 16px;
-  line-height: 26px;
+  font-size: 1rem;
+  line-height: 1.625rem;
   color: #7b8bad;
   margin-top: 32px;
 }
@@ -80,16 +80,16 @@ main .hero__button {
   font-family: "Barlow";
   font-style: normal;
   font-weight: 700;
-  font-size: 16px;
-  line-height: 26px;
+  font-size: 1rem;
+  line-height: 1.625rem;
   text-transform: uppercase;
   color: #ffffff;
   padding: 11px 14px;
 }
 main .hero__date {
   font-weight: 700;
-  font-size: 16px;
-  line-height: 26px;
+  font-size: 1rem;
+  line-height: 1.625rem;
   text-transform: uppercase;
   color: #7b8bad;
   -webkit-margin-start: 32px;
@@ -138,16 +138,16 @@ main .mechanical {
 }
 main .mechanical__heading {
   font-weight: 900;
-  font-size: 32px;
-  line-height: 36px;
+  font-size: 2rem;
+  line-height: 2.25rem;
   text-align: center;
   text-transform: uppercase;
   color: #162542;
 }
 main .mechanical__para {
   font-weight: 500;
-  font-size: 16px;
-  line-height: 26px;
+  font-size: 1rem;
+  line-height: 1.625rem;
   text-align: center;
   color: #7b8bad;
   margin-top: 24px;
@@ -172,16 +172,16 @@ main .cards .card__image {
 main .cards .card__heading {
   margin-top: 48px;
   font-weight: 900;
-  font-size: 24px;
-  line-height: 28px;
+  font-size: 1.5rem;
+  line-height: 1.75rem;
   text-transform: uppercase;
   color: #162542;
 }
 main .cards .card__para {
   margin-top: 24px;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 26px;
+  font-size: 1rem;
+  line-height: 1.625rem;
   color: #7b8bad;
 }
 main .cards .card + .card {
@@ -195,8 +195,8 @@ main .cards .card + .card {
 }
 .footer__text {
   font-weight: 500;
-  font-size: 16px;
-  line-height: 26px;
+  font-size: 1rem;
+  line-height: 1.625rem;
   color: #7b8bad;
 }
 .footer__text--bold {
@@ -328,12 +328,12 @@ main .cards .card + .card {
     margin-top: 60px;
   }
   main .hero__heading {
-    font-size: 56px;
-    line-height: 56px;
+    font-size: 3.5rem;
+    line-height: 3.5rem;
   }
   main .hero__para {
-    font-size: 18px;
-    line-height: 26px;
+    font-size: 1.125rem;
+    line-height: 1.625rem;
   }
   main .hero__image {
     margin: 0;
