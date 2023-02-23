@@ -260,6 +260,7 @@ main .cards .card + .card {
   }
   main .mechanical {
     display: flex;
+    margin-top: 72px;
   }
   main .mechanical__heading {
     text-align: start;
@@ -298,5 +299,89 @@ main .cards .card + .card {
   .footer {
     margin-top: 142px;
     padding-bottom: 43px;
+  }
+}
+@media (min-width: 1200px) {
+  body {
+    background-image: url(../assets/shared/pattern-square.svg);
+    background-repeat: no-repeat;
+    background-position: top 196px right -122px;
+  }
+  header,
+  main {
+    margin: 0 165px;
+    max-width: 1600px;
+  }
+  .header {
+    padding-top: 55px;
+  }
+  .header__button:hover {
+    cursor: pointer;
+    background: #162542;
+    color: white;
+  }
+  main .hero {
+    justify-content: space-between;
+    margin-top: 83px;
+  }
+  main .hero__content {
+    margin-top: 60px;
+  }
+  main .hero__heading {
+    font-size: 56px;
+    line-height: 56px;
+  }
+  main .hero__para {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  main .hero__image {
+    margin: 0;
+    width: 540px;
+    height: 480px;
+    margin-left: 125px;
+  }
+  main .hero__button:hover {
+    cursor: pointer;
+    opacity: 0.7;
+  }
+  main .images-and-mechanical {
+    display: flex;
+  }
+  main .images .left-background {
+    width: 255px;
+    height: 480px;
+  }
+  main .images .left {
+    width: 255px;
+    height: 480px;
+  }
+  main .images .right {
+    width: 445px;
+    height: 480px;
+  }
+  main .mechanical {
+    flex-direction: column;
+    margin-left: 125px;
+    margin-top: 112px;
+  }
+  main .mechanical__para {
+    margin: 0;
+    width: 100%;
+    margin-top: 27px;
+  }
+  main .cards {
+    grid-template-columns: repeat(4, 1fr);
+    -moz-column-gap: 30px;
+         column-gap: 30px;
+    margin-right: 0;
+    margin-top: 168px;
+  }
+  main .cards .card__heading {
+    margin-top: 48px;
+  }
+  .footer {
+    margin-top: 128px;
+    padding-bottom: 39px;
   }
 }/*# sourceMappingURL=styles.css.map */

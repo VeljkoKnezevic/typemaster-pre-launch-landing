@@ -277,6 +277,7 @@ main {
     .images {
       margin: 0;
       margin-top: 40px;
+
       .left-background {
         width: 214px;
         height: 320px;
@@ -295,6 +296,7 @@ main {
 
     .mechanical {
       display: flex;
+      margin-top: 72px;
 
       &__heading {
         text-align: start;
@@ -342,5 +344,111 @@ main {
   .footer {
     margin-top: 142px;
     padding-bottom: 43px;
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    background-image: url(../assets/shared/pattern-square.svg);
+    background-repeat: no-repeat;
+    background-position: top 196px right -122px;
+  }
+
+  header,
+  main {
+    margin: 0 165px;
+    max-width: 1600px;
+  }
+
+  .header {
+    padding-top: 55px;
+
+    &__button:hover {
+      cursor: pointer;
+      background: #162542;
+      color: white;
+    }
+  }
+
+  main {
+    .hero {
+      justify-content: space-between;
+      margin-top: 83px;
+
+      &__content {
+        margin-top: calc(143px - 83px);
+      }
+
+      &__heading {
+        font-size: 56px;
+        line-height: 56px;
+      }
+
+      &__para {
+        font-size: 18px;
+        line-height: 26px;
+      }
+
+      &__image {
+        margin: 0;
+        width: 540px;
+        height: 480px;
+        margin-left: 125px;
+      }
+
+      &__button:hover {
+        cursor: pointer;
+        opacity: 0.7;
+      }
+    }
+
+    .images-and-mechanical {
+      display: flex;
+    }
+
+    .images {
+      .left-background {
+        width: 255px;
+        height: 480px;
+      }
+      .left {
+        width: 255px;
+        height: 480px;
+      }
+      .right {
+        width: 445px;
+        height: 480px;
+      }
+    }
+
+    .mechanical {
+      flex-direction: column;
+      margin-left: 125px;
+      margin-top: calc(142px - 30px);
+
+      &__para {
+        margin: 0;
+        width: 100%;
+        margin-top: 27px;
+      }
+    }
+
+    .cards {
+      grid-template-columns: repeat(4, 1fr);
+      column-gap: 30px;
+      margin-right: 0;
+      margin-top: 168px;
+
+      .card {
+        &__heading {
+          margin-top: 48px;
+        }
+      }
+    }
+  }
+
+  .footer {
+    margin-top: 128px;
+    padding-bottom: 39px;
   }
 }
