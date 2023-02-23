@@ -385,6 +385,7 @@ main {
       }
 
       &__para {
+        margin-top: 24px;
         font-size: 1.125rem;
         line-height: 1.625rem;
       }
@@ -414,6 +415,7 @@ main {
       .left {
         width: 255px;
         height: 480px;
+        margin-right: 25px;
       }
       .right {
         width: 445px;
@@ -424,7 +426,7 @@ main {
     .mechanical {
       flex-direction: column;
       margin-left: 125px;
-      margin-top: calc(142px - 30px);
+      margin-top: 142px;
 
       &__para {
         margin: 0;
@@ -442,6 +444,7 @@ main {
       .card {
         &__heading {
           margin-top: 48px;
+          width: 70%;
         }
       }
     }
@@ -450,5 +453,10 @@ main {
   .footer {
     margin-top: 128px;
     padding-bottom: 39px;
+    text-align: start;
+
+    &__text {
+      margin-left: 568px;
+    }
   }
 }
