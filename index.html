@@ -24,36 +24,55 @@
       <button class="header__button">Pre-order now</button>
     </header>
     <main>
-      <section class="hero">
-        <h1 class="hero__heading">Typemaster keyboard</h1>
-        <p class="hero__para">
-          Improve your productivity and gaming without breaking the bank.
-          Upgrade to a high quality mechanical typing experience.
-        </p>
-        <div class="hero__button-and-date">
-          <button class="hero__button">Pre-order now</button>
-          <p class="hero__date">Release on 5/27</p>
-        </div>
+      <div class="hero">
+        <section class="hero__content">
+          <h1 class="hero__heading">Typemaster keyboard</h1>
+          <p class="hero__para">
+            Improve your productivity and gaming without breaking the bank.
+            Upgrade to a high quality mechanical typing experience.
+          </p>
+          <div class="hero__button-and-date">
+            <button class="hero__button">Pre-order now</button>
+            <p class="hero__date">Release on 5/27</p>
+          </div>
+        </section>
 
-        <img
-          src="./assets/mobile/image-keyboard.jpg"
-          alt="Typemaster keyboard"
-          class="hero__image"
-        />
-      </section>
+        <picture>
+          <source
+            media="(min-width: 700px)"
+            srcset="./assets/tablet/image-keyboard.jpg"
+          />
+
+          <img
+            src="./assets/mobile/image-keyboard.jpg"
+            alt="Typemaster keyboard"
+            class="hero__image"
+          />
+        </picture>
+      </div>
       <div class="images">
-        <div class="left-background">
+        <picture class="left-background">
+          <source
+            media="(min-width: 700px)"
+            srcset="./assets/tablet/image-phone-and-keyboard.jpg"
+          />
           <img
             src="./assets/mobile/image-phone-and-keyboard.jpg"
             alt=""
             class="left"
           />
-        </div>
-        <img
-          src="./assets/mobile/image-glass-and-keyboard.jpg"
-          alt=""
-          class="right"
-        />
+        </picture>
+        <picture>
+          <source
+            media="(min-width: 700px)"
+            srcset="./assets/tablet/image-glass-and-keyboard.jpg"
+          />
+          <img
+            src="./assets/mobile/image-glass-and-keyboard.jpg"
+            alt=""
+            class="right"
+          />
+        </picture>
       </div>
       <section class="mechanical">
         <h2 class="mechanical__heading">Mechanical wireless keyboard</h2>
